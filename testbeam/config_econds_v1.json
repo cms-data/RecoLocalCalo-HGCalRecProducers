@@ -1,0 +1,8 @@
+{
+    "ML-F*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0]
+    }
+}
