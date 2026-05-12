@@ -3,6 +3,79 @@
         "headerMarker": "0x154",
         "passthrough": 1,
         "Gain": [1, 1, 1, 1, 1, 1],
+	    "MultiPlex" : [0, 1, 2, 3, 4, 5],
         "CalibrationSC": [0, 0, 0, 0, 0, 0]
+    },
+    "MH-F*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+	    "MultiPlex" : [1, 0, 3, 2, 5, 4, 7, 6, 9, 8, 11, 10],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    "MH-B*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    "MH-T*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+	    "enabledErx" : "0x1f",
+        "Gain": [1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0]
+    },
+    "MH-L*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0]
+    },
+    "MH-R*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0]
+    },
+    "ML-B*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "ML-T*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "ML-L*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+	    "enabledErx" : "0x7",
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "ML-R*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+	    "enabledErx" : "0x7",
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "ML-5*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+	    "enabledErx" : "0x37",
+        "Gain": [1, 1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0]
+    },
+    "TB-L44-S1": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     }
 }
+
