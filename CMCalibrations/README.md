@@ -6,19 +6,15 @@ Inputs for the CM DNN run by `HGCalRecHitsProducer` (`RecoLocalCalo/HGCalRecAlgo
 
 | File | Used as |
 |---|---|
-| `cm_dnn_multimodule.pth` | TorchScript model (`model`), `plain` variant |
-| `cm_dnn_multimodule_manifest.json` | feature order, module vocabulary (`modelManifest`), `plain` variant |
-| `cm_dnn_multimodule_zscore.pth` | TorchScript model, `zscore` variant (z-score normalised inputs/outputs) |
-| `cm_dnn_multimodule_zscore_manifest.json` | manifest, `zscore` variant |
-| `cm_dnn_multimodule_zscore_preprocessing.json` | input mean/std and per-channel output mean/std (`inputPreprocessing`), `zscore` variant |
-| `cellareas.json` | silicon cell area fractions (`cellAreas`), DNN input `cell_area_fraction` |
+| `cm_dnn_multimodule_zscore.pth` | TorchScript model (`HGCalRecHitsProducer.model`), z-score normalised inputs/outputs |
+| `cm_dnn_multimodule_zscore_manifest.json` | feature order, module vocabulary (`HGCalCMMLParamESProducer.modelManifest`) |
+| `cm_dnn_multimodule_zscore_preprocessing.json` | input mean/std and per-channel output mean/std (`HGCalCMMLParamESProducer.inputPreprocessing`) |
+| `cellareas.json` | silicon cell area fractions (`HGCalCMMLParamESProducer.cellAreas`), DNN input `cell_area_fraction` |
 
-Both models: 254 input features, `Linear(254,256)-ReLU-Linear(256,256)-ReLU-Linear(256,256)-ReLU-Linear(256,32)-ReLU-Linear(32,1)`,
-trained by A. Reimers on the September 2025 test-beam (runs 112044, 112050, 112060, 112073) and
-converted from the PyTorch `state_dict` checkpoints to TorchScript.
-
-- `plain`: `allchannels_multimodule_perchannel_F254__256-256-256-32__dr0`
-- `zscore`: `allchannels_multimodule_inputzscore_perchannel_F254__256-256-256-32__dr0`
+The model has 254 input features, `Linear(254,256)-ReLU-Linear(256,256)-ReLU-Linear(256,256)-ReLU-Linear(256,32)-ReLU-Linear(32,1)`,
+and was trained by A. Reimers on the September 2025 test-beam (runs 112044, 112050, 112060, 112073)
+(`allchannels_multimodule_inputzscore_perchannel_F254__256-256-256-32__dr0`), then converted from the
+PyTorch `state_dict` checkpoint to TorchScript.
 
 `cellareas.json` is a copy of `HGCalCommissioning/LocalCalibration/data/cellareas.json`.
 It is needed because `HGCalDenseIndexInfo::area()` comes from `HGCalGeometry::getArea`, which gives
