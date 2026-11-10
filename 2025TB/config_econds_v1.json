@@ -1,0 +1,56 @@
+{
+    "ML-F*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0]
+    },
+    "MH-F*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    "MH-B*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    "MH-L*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0]
+    },
+    "ML-B*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "ML-T*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "ML-L*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "ML-R*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1],
+        "CalibrationSC": [0, 0, 0]
+    },
+    "TL-L44*": {
+        "headerMarker": "0x154",
+        "passthrough": 1,
+        "Gain": [1, 1, 1, 1, 1],
+        "CalibrationSC": [0, 0, 0, 0, 0]
+    }
+}
